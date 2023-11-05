@@ -1,5 +1,5 @@
 [package]
-name = "linux-canpil-rs"
+name = "can-pil-linux-rs"
 version = "0.1.0"
 edition = "2021"
 
