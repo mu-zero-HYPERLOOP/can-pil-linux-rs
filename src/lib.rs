@@ -63,9 +63,9 @@ impl CAN {
         }
     }
 
-    pub fn receive_blocking(&self) -> Option<CanFrame> {
+    pub fn receive_blocking(&self) -> CanFrame {
         match self.rx.recv() {
-            Ok(frame) => Some(frame),
+            Ok(frame) => frame,
             Err(_) => panic!("rx transmitter dropped"),
         }
     }
