@@ -5,7 +5,7 @@ use socket::OwnedCanSocket;
 
 use crate::frame::CanFrame;
 
-mod frame;
+pub mod frame;
 mod socket;
 
 pub enum CanModule {
