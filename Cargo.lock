@@ -33,6 +33,16 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "1fd0f2584146f6f2ef48085050886acf353beff7305ebd1ae69500e27c67f64b"
 
 [[package]]
+name = "can-pil-linux-rs"
+version = "0.1.0"
+dependencies = [
+ "embedded-can",
+ "libc",
+ "nix 0.27.1",
+ "socketcan",
+]
+
+[[package]]
 name = "cfg-if"
 version = "1.0.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -73,16 +83,6 @@ name = "libc"
 version = "0.2.149"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "a08173bc88b7955d1b3145aa561539096c421ac8debde8cbc3612ec635fee29b"
-
-[[package]]
-name = "linux-canpil-rs"
-version = "0.1.0"
-dependencies = [
- "embedded-can",
- "libc",
- "nix 0.27.1",
- "socketcan",
-]
 
 [[package]]
 name = "log"

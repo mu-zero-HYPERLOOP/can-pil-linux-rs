@@ -1,4 +1,5 @@
-use linux_canpil_rs::{CAN, CanModule};
+use can_pil_linux_rs::{CAN, CanModule};
+
 
 mod frame;
 mod socket;
