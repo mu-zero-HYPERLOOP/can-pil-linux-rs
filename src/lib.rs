@@ -79,3 +79,5 @@ impl CAN {
         }
     }
 }
+unsafe impl Send for CAN {}
+unsafe impl Sync for CAN {}
